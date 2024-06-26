@@ -17,8 +17,8 @@ nav {
 }
 
 .navbar-brand:hover{
-    color: #ffffff;
-    text-decoration: underline;
+    color: #bb86fc;
+    /* text-decoration: underline; */
 }
 
 /* Estilo para los encabezados en modo oscuro */

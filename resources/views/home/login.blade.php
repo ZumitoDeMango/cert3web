@@ -21,7 +21,12 @@
                     <label for="" class="form-label">Ingrese su contraseña</label>
                     <input type="password" name="" id="" class="form-control">
                 </div>
-                <button type="submit">Ingresar</button>
+                <div>
+                    <a href="/register">No tienes cuenta? registrate aqui</a>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit">Ingresar</button>
+                </div>
             </form>
         </div>
     </div>
