@@ -8,7 +8,7 @@
 
 <div class="d-flex justify-content-center">
     <div class="col-6">
-        <div class="container" data-bs-theme="dark">
+        <div class="container">
             <form action="">
                 <div class="mb-3 text-center">
                     <h3>Login</h3>

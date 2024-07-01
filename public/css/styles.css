@@ -1,84 +1,11 @@
-/* Estilo para el cuerpo de la página en modo oscuro */
-body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo para el navbar */
-nav {
-    background-color: #2c2c2c;
-}
-
-.navbar-brand{
+/* tema oscuro */
+body[data-bs-theme-value="dark"] {
+    background-color: #343a40;
     color: #ffffff;
 }
 
-.navbar-brand:hover{
-    color: #bb86fc;
-    /* text-decoration: underline; */
-}
-
-/* Estilo para los encabezados en modo oscuro */
-h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-}
-
-/* Estilo para los párrafos en modo oscuro */
-p {
-    color: #e0e0e0;
-    line-height: 1.6;
-}
-
-/* Estilo para enlaces en modo oscuro */
-a {
-    color: #bb86fc;
-    text-decoration: none;
-}
-
-/* Estilo para contenedores en modo oscuro */
-.container {
-    width: 80%;
-    margin: 0 auto;
-    background-color: #1e1e1e;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Estilo para botones en modo oscuro */
-button {
-    background-color: #bb86fc;
-    color: #121212;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #9a67ea;
-}
-
-/* Estilo para tablas en modo oscuro */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-}
-
-th, td {
-    border: 1px solid #333;
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #333;
-}
-
-tr:nth-child(even) {
-    background-color: #2c2c2c;
+/* tema claro */
+body[data-bs-theme-value="light"] {
+background-color: #ffffff;
+color: #000000;
 }
