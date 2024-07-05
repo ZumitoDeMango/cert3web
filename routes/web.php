@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-<<<<<<< Updated upstream
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,4 +17,15 @@ Route::get('/register',[UsuariosController::class,'register'])->name('usuarios.r
 /* rutas de catalog */
 
 /* rutas de account */
->>>>>>> Stashed changes
+
+use App\Http\Controllers\HomeController;
+
+/* rutas de home */
+Route::get('/',[HomeController::class,'index'])->name('home.index');
+Route::get('/login',[HomeController::class,'login'])->name('home.login');
+Route::get('/register',[HomeController::class,'register'])->name('home.register');
+
+/* rutas de catalog */
+
+/* rutas de account */
+

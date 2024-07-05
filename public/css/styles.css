@@ -1,0 +1,11 @@
+/* tema oscuro */
+body[data-bs-theme-value="dark"] {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* tema claro */
+body[data-bs-theme-value="light"] {
+background-color: #ffffff;
+color: #000000;
+}
