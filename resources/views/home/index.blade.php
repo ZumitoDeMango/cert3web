@@ -1,8 +1,15 @@
-@extends('templates/master')
+@php  
+    $route = 'templates/unlogged'; 
+    if(Auth::check()){
+        if (Auth::user()->rol_id == 2) {
+            $route = 'templates/master'; 
+        }else{
+            $route = 'templates/unlogged';
+        }
+    }
+@endphp
 
-@section('titulo')
-    <title>Venta de vehiculos</title>
-@endsection
+@extends($route)
 
 @section('contenido-principal')
     <div class="container">

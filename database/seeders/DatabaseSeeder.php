@@ -3,8 +3,11 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\tiporol;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,11 +16,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // tipo de usuarios
+        tiporol::create(['tipo' => 'ejecutivo']);
+        tiporol::create(['tipo' => 'admin']);
+        tiporol::create(['tipo' => 'cliente']);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        // usuarios
+        User::create([
+            'name' => 'ejecutivo1',
+            'email' => 'Ejecutivo123@email.com',
+            'tipo_rol' => 1,
+            'password' => Hash::make('ejecutivo123'),
         ]);
+        User::create([
+            'name' => 'admin1',
+            'email' => 'Admin123@email.com',
+            'tipo_rol' => 2,
+            'password' => Hash::make('admin123'),
+        ]);
+
+
     }
 }
