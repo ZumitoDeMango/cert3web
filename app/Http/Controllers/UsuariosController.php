@@ -38,7 +38,6 @@ class UsuariosController extends Controller
     }
 
     function registerUser(Request $request){
-
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
@@ -52,6 +51,16 @@ class UsuariosController extends Controller
     function logout(){
         Auth::logout();
         return redirect()->route('home.index');
+    }
+
+    function selfedit(Request $request){
+        $user = User::where('id', $request->id)->first();
+        if (Auth::user()->id || $user-> id != null){
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->save();
+        }
+        return redirect()->route('usuarios');
     }
 
 }
