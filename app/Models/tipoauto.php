@@ -10,6 +10,7 @@ class tipoauto extends Model
 {
     use HasFactory;
     protected $table = 'tipo_auto';
+    public $timestamps = false;
 
     public function auto() : HasMany
     {

@@ -10,6 +10,7 @@ class arriendoauto extends Model
 {
     use HasFactory;
     protected $table = 'arriendo_auto';
+    public $timestamps = false;
 
     public function auto(): BelongsTo
     {

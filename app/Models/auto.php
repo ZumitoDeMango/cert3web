@@ -12,6 +12,7 @@ class auto extends Model
 {
     use HasFactory;
     protected $table = 'auto';
+    public $timestamps = false;
 
 
     public function arriendo(): HasMany

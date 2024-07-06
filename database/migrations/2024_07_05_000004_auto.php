@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('color');
             $table->string('placa');
             $table->string('anio');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->boolean('estado')->default(false);
         });
     }

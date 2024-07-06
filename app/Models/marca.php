@@ -10,6 +10,7 @@ class marca extends Model
 {
     use HasFactory;
     protected $table = 'marca';
+    public $timestamps = false;
 
     public function auto() : HasMany
     {
